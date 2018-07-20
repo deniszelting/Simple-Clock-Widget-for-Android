@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Часы с секундами</string>
+    <string name="widget_name">Часы с секундами</string>
+    <string name="widget_text">00:00</string>
+    <string name="title_activity_calendar_config">Конфигурирование виджета часов</string>
+    <string name="sHoursSize">Размер шрифта в поле Часы</string>
+    <string name="sMinutesSize">Размер шрифта в поле Минуты</string>
+    <string name="sSecondsSize">Размер шрифта в поле Секунды</string>
+    <string name="sDateSize">Размер шрифта в поле Дата</string>
+    <string name="sTextColor">Цвет текста</string>
+    <string name="sBackgroundColor">Цвет фона</string>
+    <string name="sApplySettings">Применить настройки</string>
+    <string name="sAlarmNotFound">К сожалению будильник на Вашем устройстве не найден</string>
+</resources>

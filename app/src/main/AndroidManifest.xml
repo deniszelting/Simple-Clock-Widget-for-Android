@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.zelting.denis.clockwidget">
+
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:name=".clockwidget"
+        android:icon="@mipmap/clock_icon"
+        android:label="@string/app_name">
+        <receiver
+            android:name=".SimpleClockWidget"
+            android:icon="@mipmap/clock_icon"
+            android:label="@string/widget_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="SimpleClockWidget.ON_CLICK" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/metadata" />
+        </receiver>
+
+        <service android:name=".TickService" />
+
+        <activity
+            android:name=".ActivityConfig"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

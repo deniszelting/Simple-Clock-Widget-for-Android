@@ -1,0 +1,10 @@
+<appwidget-provider
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/clock_widget_layout"
+    android:minHeight="40dip"
+    android:minWidth="120dip"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="1800000"
+    android:configure="ru.zelting.denis.clockwidget.ActivityConfig"
+    android:previewImage="@drawable/preview">
+</appwidget-provider>

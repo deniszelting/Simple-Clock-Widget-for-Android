@@ -1,0 +1,107 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvHourSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sHoursSize"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <EditText
+        android:id="@+id/etHoursSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="65"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tvMinutesSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sMinutesSize"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <EditText
+        android:id="@+id/etMinutesSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="30"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tvSecondsSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sSecondsSize"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <EditText
+        android:id="@+id/etSecondsSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="20"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tvDateSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sDateSize"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <EditText
+        android:id="@+id/etDateSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="20"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tvTextColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sTextColor"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <EditText
+        android:id="@+id/etTextColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="#FFFFFFFF"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tvBackgroundColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sBackgroundColor"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <EditText
+        android:id="@+id/etBackgroundColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="#30777777"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onApplySettings"
+        android:text="@string/sApplySettings" />
+</LinearLayout>
+</ScrollView>
